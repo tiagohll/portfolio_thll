@@ -24,6 +24,9 @@ export function MainCenter() {
                         </button> */}
                     </div>
 
+                    <span className="font-bold text-white text-3xl mt-6 hover:underline">
+                        Projetos
+                    </span>
                     <div className="flex">
                         <button
                             onClick={handleOpenModal}
