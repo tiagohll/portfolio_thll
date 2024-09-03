@@ -26,8 +26,8 @@ export function HadarModal({
                 className="absolute inset-0 bg-black/50"
                 onClick={onClose}
             />
-            <div className="flex flex-col z-10 gap-5 items-center justify-center p-5">
-                <div className="bg-zinc-800 rounded-xl p-5 w-[60vw] h-[60vh] overflow-auto">
+            <div className="flex flex-col z-10 gap-5 items-center justify-center p-5 w-full">
+                <div className="bg-zinc-800 rounded-xl p-5 lg:w-[60vw] w-full md:h-[60vh] overflow-auto">
                     <div className="flex items-center justify-between gap-2">
                         <div className="flex items-center gap-2 p-2 group">
                             <div className="bg-gradient-to-br from-red-600 to-orange-500 p-2 rounded-xl">
@@ -59,9 +59,9 @@ export function HadarModal({
                         <Link
                             href="https://www.agenciahadar.com.br/"
                             target="_blank"
-                            className="flex flex-col gap-5 items-center justify-center my-3"
+                            className="lg:flex flex-col gap-5 items-center justify-center my-3 hidden"
                         >
-                            <div className="w-[720px] h-[320px] bg-blue-400 rounded-xl overflow-hidden">
+                            <div className="w-[520px] h-[320px] bg-blue-400 rounded-xl overflow-hidden">
                                 <Image
                                     src="/banners/hadar.png"
                                     alt="Banner Hadar"
@@ -70,7 +70,44 @@ export function HadarModal({
                                     className="h-full w-full"
                                 />
                             </div>
-                            <div className="bg-[#4e757c] text-white font-bold p-3 rounded-full w-[720px] text-center hover:bg-[#3a6369] duration-200">
+                            <div className="bg-[#4e757c] text-white font-bold p-3 rounded-full w-[520px] text-center hover:bg-[#3a6369] duration-200">
+                                Ver site
+                            </div>
+                        </Link>
+
+                        <Link
+                            href="https://www.agenciahadar.com.br/"
+                            target="_blank"
+                            className="sm:flex hidden lg:hidden flex-col gap-5 items-center justify-center my-3"
+                        >
+                            <div className="w-[450px] h-[320px] bg-blue-400 rounded-xl overflow-hidden">
+                                <Image
+                                    src="/banners/hadar-laptop1.png"
+                                    alt="Banner Hadar"
+                                    width={520}
+                                    height={320}
+                                    className="h-full w-full"
+                                />
+                            </div>
+                            <div className="bg-[#4e757c] text-white font-bold p-3 rounded-full w-[450px] text-center hover:bg-[#3a6369] duration-200">
+                                Ver site
+                            </div>
+                        </Link>
+                        <Link
+                            href="https://www.agenciahadar.com.br/"
+                            target="_blank"
+                            className="sm:hidden flex flex-col gap-5 items-center justify-center my-3"
+                        >
+                            <div className="w-[290px] h-[320px] bg-blue-400 rounded-xl overflow-hidden">
+                                <Image
+                                    src="/banners/hadar-mobile.png"
+                                    alt="Banner Hadar"
+                                    width={290}
+                                    height={320}
+                                    className="h-full w-full"
+                                />
+                            </div>
+                            <div className="bg-[#4e757c] text-white font-bold p-3 rounded-full w-[290px] text-center hover:bg-[#3a6369] duration-200">
                                 Ver site
                             </div>
                         </Link>
@@ -83,7 +120,7 @@ export function HadarModal({
                     </div>
                     <div className="flex flex-col gap-2"></div>
                 </div>
-                <div className="bg-zinc-800 text-white rounded-xl p-2 px-9 w-[60vw] flex gap-3 items-center">
+                <div className="bg-zinc-800 text-white rounded-xl p-2 px-9 lg:w-[60vw] w-full flex gap-3 items-center">
                     <span className="font-semibold">
                         Dê um Feedback!
                     </span>
