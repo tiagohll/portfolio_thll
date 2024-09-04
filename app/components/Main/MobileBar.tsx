@@ -11,7 +11,7 @@ export function Mobilebar() {
                 <House />
             </Link>
             <Link
-                href="/"
+                href="/search"
                 className="bg-white/5 p-3 rounded-xl flex flex-col items-center font-bold hover:bg-white/15 duration-200"
             >
                 <Search />

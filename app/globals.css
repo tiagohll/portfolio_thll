@@ -7,3 +7,24 @@
         text-wrap: balance;
     }
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #ffffff00;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #777676;
+    border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

@@ -8,9 +8,12 @@ export default function Header() {
                 https://tiagohll.vercel.app/
             </code>
             <div className="flex w-full items-center justify-center gap-5">
-                <button className="bg-zinc-800 p-3 rounded-full hover:scale-105 duration-200">
+                <Link
+                    href="/"
+                    className="bg-zinc-800 p-3 rounded-full hover:scale-105 duration-200"
+                >
                     <House className="text-zinc-500" />
-                </button>
+                </Link>
                 <Link
                     href="/search"
                     className="flex items-center gap-3 bg-zinc-800 p-3 rounded-full hover:scale-105 w-fit text-zinc-500 hover:bg-zinc-700 cursor-pointer duration-200 group"
