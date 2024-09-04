@@ -19,9 +19,12 @@ export function MainCenter() {
                         <button className="bg-white rounded-full px-2 py-1.5 font-semibold text-sm text-black w-fit">
                             Inicio
                         </button>
-                        {/* <button className="bg-white/10 rounded-full px-2 py-1.5 font-semibold text-sm text-white w-fit hover:bg-white/15 duration-200">
+                        <Link
+                            href="/search"
+                            className="bg-white/10 rounded-full px-2 py-1.5 font-semibold text-sm text-white hover:bg-white/15 w-fit duration-200"
+                        >
                             Projetos
-                        </button> */}
+                        </Link>
                     </div>
 
                     <span className="font-bold text-white text-3xl mt-6 hover:underline">

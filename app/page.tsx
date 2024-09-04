@@ -4,6 +4,7 @@ import {
     MainSidebar,
     Mobilebar,
 } from "./components/Main";
+import Footer from "./components/Footer";
 
 export default function Home() {
     return (
@@ -15,11 +16,7 @@ export default function Home() {
                     <MainCenter />
                 </main>
                 <Mobilebar />
-                <footer className="flex sm:hidden">
-                    <span className="">
-                        tiagohll © 2024
-                    </span>
-                </footer>
+                <Footer />
             </section>
         </>
     );

@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import {
     MainSearch,
@@ -15,11 +16,7 @@ export default function Search() {
                     <MainSearch />
                 </main>
                 <Mobilebar />
-                <footer className="sm:flex hidden text-white">
-                    <span className="font-semibold">
-                        tiagohll © 2024
-                    </span>
-                </footer>
+                <Footer />
             </section>
         </>
     );

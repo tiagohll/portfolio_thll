@@ -16,6 +16,12 @@ export function MainSearch() {
             <div className="flex flex-col overflow-auto bg-zinc-800 w-full h-full sm:rounded-xl sm:mb-0 mb-20">
                 <div className="flex flex-col p-3 h-1/6 bg-gradient-to-b from-blue-400/5 to-zinc-800">
                     <div className="flex gap-2">
+                        <Link
+                            href="/"
+                            className="bg-white/10 rounded-full px-2 py-1.5 font-semibold text-sm text-white hover:bg-white/15 w-fit duration-200"
+                        >
+                            Início
+                        </Link>
                         <button className="bg-white rounded-full px-2 py-1.5 font-semibold text-sm text-black w-fit">
                             Projetos
                         </button>
@@ -27,7 +33,7 @@ export function MainSearch() {
                     <div className="flex">
                         <button
                             onClick={handleOpenModal}
-                            className="rounded-xl w-full sm:w-[320px] h-[140px] flex items-center overflow-hidden my-2"
+                            className="rounded-xl w-full hidden md:flex sm:w-[320px] h-[140px] items-center overflow-hidden my-2"
                         >
                             <Image
                                 src="/banners/hadar-search.png"
@@ -35,6 +41,30 @@ export function MainSearch() {
                                 width={320}
                                 height={140}
                                 className="w-full"
+                            />
+                        </button>
+                        <button
+                            onClick={handleOpenModal}
+                            className="rounded-xl w-full hidden sm:flex md:hidden md:w-[560px] h-[140px] items-center overflow-hidden my-2"
+                        >
+                            <Image
+                                src="/banners/hadar-search-laptop1.png"
+                                alt="Capa do projeto"
+                                width={560}
+                                height={140}
+                                className="w-full rounded-xl"
+                            />
+                        </button>
+                        <button
+                            onClick={handleOpenModal}
+                            className="rounded-xl w-full sm:hidden sm:w-[560px] h-[140px] flex items-center overflow-hidden my-2"
+                        >
+                            <Image
+                                src="/banners/hadar-search-mobile.png"
+                                alt="Capa do projeto"
+                                width={560}
+                                height={320}
+                                className="w-full rounded-xl"
                             />
                         </button>
                     </div>
